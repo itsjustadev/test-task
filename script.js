@@ -1,16 +1,28 @@
-let elements = document.querySelectorAll('.button.key');
-let display = document.querySelector('.display');
-let clear = document.querySelector('.clear');
+let list = document.querySelector('.todo-list');
+let input = document.querySelector('.todo-input');
+let form = document.querySelector('.todo-form');
+let priority = document.querySelector('.todo-priority');
 
-for (let element of elements) {
-  element.onclick = function() {
-    console.log(element);
-    display.textContent += element.textContent;
+
+priority.onclick = function () {
+  priority.classList.toggle('is-important');
+  if (priority.classList.contains('is-important')) {
+    priority.textContent = 'Важная задача';
+  } else {
+    priority.textContent = 'Обычная задача';
   }
 };
 
-clear.onclick = function() {
-  display.textContent = '';
+form.onsubmit = function (evt) {
+  evt.preventDefault();
+  
+  let newlist = document.createElement('li');
+  
+  newlist.textContent = input.value;
+  
+  list.append(newlist);
+  if (priority.classList.contains('is-important')) {
+    newlist.classList.add('is-important');
+  }
+  input.value = '';
 };
-
-
