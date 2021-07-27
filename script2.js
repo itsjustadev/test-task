@@ -77,12 +77,11 @@ let object = {
  17: 6,
  19: 7,
  56: 8,
-  
 }
-
 
 for (let i = 0; i < given.length; i++) {
   
   final.push(object[given[i]]);
 }
+console.log(final);
 final;
