@@ -80,7 +80,6 @@ let object = {
 }
 
 for (let i = 0; i < given.length; i++) {
-  
   final.push(object[given[i]]);
 }
 console.log(final);
