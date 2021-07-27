@@ -1,4 +1,4 @@
-//solution pf (marks are +- equal)
+//solution of (marks are +- equal)
 //we have a mass of marks
 let mass = [5,5,5,5,5,5,5];
 let k = 0;
