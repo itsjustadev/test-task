@@ -22,7 +22,7 @@ while (k + 1 < mass.length) {
   }
 }
 k++;
-}
+};
 //endSorting
 
 console.log(mass);
