@@ -64,7 +64,7 @@ while (number >= 0) {
   rank[sign - number] = sum;
   number--;
 }
-console.log(rank)
+console.log(rank);
 
 //endRank
 
